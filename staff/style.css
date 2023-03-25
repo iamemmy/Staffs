@@ -1,0 +1,45 @@
+.container {
+  max-width: 1400px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.container h2 {
+  font-size: 32px;
+  margin-bottom: 1em;
+}
+.container .cards {
+  display: grid;
+  grid-auto-columns: 100%;
+  grid-column-gap: 10px;
+  grid-auto-flow: column;
+  padding: 25px 0px;
+  list-style: none;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+.container .cards .card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  scroll-snap-align: start;
+  transition: all 0.2s;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.container .cards .card .card-img {
+  width: 440px;
+}
+.container .cards .card .card-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #000000;
+}/*# sourceMappingURL=style.css.map */

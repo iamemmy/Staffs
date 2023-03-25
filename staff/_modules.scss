@@ -1,0 +1,39 @@
+// GENERAL
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000000;
+    // outline: 1px solid green;
+}
+
+//Variable
+$colors:(
+    color01: #000000,
+    color02: #FFFFFF,
+    color03: #40FFC7,
+    color04: #18A2FB,
+);
+
+// Function
+@function getColor($key){
+    @return map-get($colors, $key);
+}
+
+// Mixin
+@mixin mobile {
+    @media (max-width: 500.2){
+        @content;
+    }
+}
+@mixin portrait {
+    @media (max-width: 768.2px){
+        @content;
+    }
+}
+@mixin landscape {
+    @media (max-width: 1100.2px){
+        @content;
+    }
+}

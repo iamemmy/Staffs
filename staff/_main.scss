@@ -1,0 +1,36 @@
+.container {
+    max-width: 1400px;
+    padding: 0 15px;
+    margin: 0 auto;
+    h2 {
+        font-size: 32px;
+        margin-bottom: 1em;
+    }
+    .cards {
+        display: grid;
+        grid-auto-columns: 100%;
+        grid-column-gap: 10px;
+        grid-auto-flow: column;
+        padding: 25px 0px;
+        list-style: none;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        .card {
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+            scroll-snap-align: start;
+            transition: all 0.2s;
+            border-radius: 5px;
+            overflow: hidden;
+            .card-img {
+                width: 440px;
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+  }
